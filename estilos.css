@@ -3,7 +3,7 @@
     src: url('fonts/Montserrat-VariableFont_wght.ttf');
 }
 *{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     font-family: 'Montserrat';
 }
 html{
@@ -44,6 +44,18 @@ ul {
 }
 li {
     float: left;
+    
+}
+.bar:hover{
+    letter-spacing: 0.7rem;
+    border: 1px solid #a70411 ;
+    background-color: #a33c45;
+    border-radius: 50px;
+    text-shadow: 2px 2px 9px rgb(205, 205, 205);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 li a {
@@ -53,9 +65,14 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+.active{
+    text-decoration: underline;
+}
 #logo{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
 }
 main{
     display: flex;
@@ -63,10 +80,16 @@ main{
 }
 article{
     flex: 1 0 80%;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 aside{
     flex: 1 0 20%;
+    background-color: black;
+}
+aside img{
+
 }
 
 
@@ -79,19 +102,42 @@ aside{
 
    /* Estilos para tablets en orientación horizontal */
 @media only screen and (min-width : 1024px) and (max-width : 1399px) {
+    ul{
+        font-size: 1.5rem;
+    }
 }
 
    /* Estilos para tablets en orientación vertical */
 @media only screen and (min-width : 768px) and (max-width : 1023px) {
+    ul{
+        font-size: 1.5rem;
+    }
     
 }
 
    /* Estilos para celulares en orientación horizontal */
 @media only screen and (min-width : 481px) and (max-width : 767px) {
-    
+    ul{
+        font-size: 1rem;
+    }
+    #logo{
+        width: 90px;
+        height: 90px;
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
    /* Estilos para celulares en orientación vertical */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
+    ul{
+        font-size: 1rem;
+    }
+    #logo{
+        width: 90px;
+        height: 90px;
+        margin: 0px;
+        padding: 0px;
+    }
     
 }
