@@ -102,6 +102,7 @@ article{
 #menu h1{
     font-size: 3rem;
     letter-spacing: 2rem;
+    text-align: center;
 }
 .prod{
     width: 350px;
@@ -201,7 +202,7 @@ footer>div{
 /* Estilos para escritorio */
 @media only screen and (min-width : 1200px) {
     header{
-        height: 85vh;
+        height: 75vh;
     }
 }
 
