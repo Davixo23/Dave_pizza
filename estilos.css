@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+}
+*{
+    border: 1px solid black;
+    font-family: 'Montserrat';
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+header,footer{
+    flex: 0 0 auto;
+}
+header{
+    display: flex;
+    background-color: black;
+}
+video{
+    flex: 1 0 auto;
+    width: 100%;
+    height: auto;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #98000D;
+    position: sticky;
+    top: 0;
+    font-size: 2rem;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+main{
+    display: flex;
+    flex: 1 0 auto;
+}
+article{
+    flex: 1 0 80%;
+    
+}
+aside{
+    flex: 1 0 20%;
+}
+
+
+/* Estilos para escritorio */
+@media only screen and (min-width : 1200px) {
+    header{
+        height: 85vh;
+    }
+}
+
+   /* Estilos para tablets en orientación horizontal */
+@media only screen and (min-width : 1024px) and (max-width : 1399px) {
+}
+
+   /* Estilos para tablets en orientación vertical */
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+    
+}
+
+   /* Estilos para celulares en orientación horizontal */
+@media only screen and (min-width : 481px) and (max-width : 767px) {
+    
+}
+
+   /* Estilos para celulares en orientación vertical */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    
+}
