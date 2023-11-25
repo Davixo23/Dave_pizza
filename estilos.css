@@ -41,6 +41,12 @@ ul {
     position: sticky;
     top: 0;
     font-size: 2rem;
+    z-index: 10;
+    transition: all 0.5s ease;
+
+}
+ul.peque{
+    height: 80px;
 }
 li {
     float: left;
@@ -69,8 +75,8 @@ li a {
     text-decoration: underline;
 }
 #logo{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: auto;
     margin: 0px;
     padding: 0px;
 }
@@ -84,12 +90,66 @@ article{
     flex-wrap: wrap;
     
 }
+#menu{
+    display: flex;
+    width: 100%;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+#menu h1{
+    font-size: 3rem;
+    letter-spacing: 2rem;
+}
+article div img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    transition: transform .4s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+article div img:hover{
+    transform: scale(1.3); 
+    transform-origin: 50% 50%;
+}
+.img{
+    overflow: hidden;
+}
 aside{
     flex: 1 0 20%;
     background-color: black;
 }
-aside img{
+.img{
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+.div1{
+    width: 350px;
+}
+details{
+    z-index: 10;
+    padding-left: 10px;
+    width: 90%;
+    margin: 0px;
+    overflow: auto;
 
+}
+details summary{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+details p{
+    width: 90%;
+    text-align: justify;
+    align-self: flex-start;
+    font-size: 1rem;
 }
 
 
@@ -105,12 +165,20 @@ aside img{
     ul{
         font-size: 1.5rem;
     }
+    #menu h1{
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
 }
 
    /* Estilos para tablets en orientación vertical */
 @media only screen and (min-width : 768px) and (max-width : 1023px) {
     ul{
         font-size: 1.5rem;
+    }
+    #menu h1{
+        font-size: 2rem;
+        letter-spacing: 1rem;
     }
     
 }
@@ -126,6 +194,13 @@ aside img{
         margin: 0px;
         padding: 0px;
     }
+    #menu h1{
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    article{
+        justify-content: center;
+    }
 }
 
    /* Estilos para celulares en orientación vertical */
@@ -139,5 +214,15 @@ aside img{
         margin: 0px;
         padding: 0px;
     }
-    
+    #menu h1{
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
+    #menu h1{
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+    article{
+        justify-content: center;
+    }
 }

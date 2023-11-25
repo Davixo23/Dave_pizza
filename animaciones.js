@@ -13,3 +13,10 @@ let animacion = setInterval(() => {
         logo.setAttribute("src", direct);
     
 }, 1000);
+window.onscroll= ()=>{
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        document.getElementById("barra").classList.add("peque");
+      } else {
+        document.getElementById("barra").classList.remove("peque");
+      }
+}
